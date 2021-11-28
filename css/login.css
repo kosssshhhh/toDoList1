@@ -1,0 +1,15 @@
+.login-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+#login-form input {
+  width: 120px;
+  height: 40px;
+  font-size: 20px;
+}
+
+#login-form button {
+  height: 40px;
+  font-size: 20px;
+}

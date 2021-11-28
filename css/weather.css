@@ -1,0 +1,9 @@
+#weather {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#weather span {
+  font-size: 25px;
+}

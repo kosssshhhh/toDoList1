@@ -1,0 +1,19 @@
+@import "todo.css";
+@import "clock.css";
+@import "login.css";
+@import "quotes.css";
+@import "weather.css";
+
+* {
+  font-family: "Dongle", sans-serif;
+}
+
+.hidden {
+  display: none;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(#68eacc, #497be8);
+}

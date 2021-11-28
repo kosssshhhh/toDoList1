@@ -1,0 +1,49 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vanila JS</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dongle&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="clock-wrapper">
+        <h2 class="clock">00:00</h2>
+    </div>
+
+    <div class="login-wrapper">
+    <form class="hidden" id="login-form">
+        <input required maxlength="15" type="text" placeholder="Put your name!">
+        <button>login!</button>
+    </form>
+
+    <h1 id="greeting" class="hidden"></h1>
+    </div>
+
+    <div id="weather">
+        <span></span>
+    </div>
+
+    <div id="quote">
+        <span></span>
+        <span></span>
+    </div>
+    <div class="todo">
+        <h2>Your To Do List</h2>
+        <form id="todo-form">
+          <input type="text" placeholder="Write a To Do and Press Enter!">
+        </form>
+
+        <ul id="todo-list"></ul>
+    </div>
+
+    <script src="js/clock.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/todolist.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/quotes.js"></script>
+</body>
+</html>

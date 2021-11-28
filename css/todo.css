@@ -1,0 +1,63 @@
+.todo {
+  margin: 100px auto;
+  max-width: 400px;
+  padding: 25px;
+  width: 100%;
+  border-radius: 5px;
+  background: #fff;
+  font-size: 25px;
+  margin-top: 30px;
+  padding-bottom: 10px;
+}
+
+.todo input {
+  width: 85%;
+  height: 25px;
+  border: 1px solid #ccc;
+  font-size: 17px;
+  border-radius: 3px;
+  padding-left: 15px;
+}
+
+.todo h2 {
+  margin-top: -20px;
+  margin-bottom: 10px;
+}
+
+.login-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+#todo-list li {
+  height: 45px;
+  background: #f2f2f2;
+  list-style: none;
+  line-height: 45px;
+  position: relative;
+  border-radius: 3px;
+  margin-bottom: 8px;
+  padding: 0 10px;
+  margin-left: -40px;
+  overflow: hidden;
+}
+
+#todo-list button {
+  position: absolute;
+  right: -45px;
+  height: 100%;
+  width: 45px;
+  background: yellow;
+  border-radius: 0 3px 3px 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#todo-list li:hover button {
+  right: 0px;
+}
+
+#todo-list {
+  max-height: 250px;
+  overflow-y: auto;
+}
