@@ -50,7 +50,7 @@
   background: yellow;
   border-radius: 0 3px 3px 0;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.3s ease-in-out;
 }
 
 #todo-list li:hover button {
