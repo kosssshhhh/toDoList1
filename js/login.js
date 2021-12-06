@@ -2,6 +2,8 @@ const loginForm = document.querySelector("#login-form");
 const loginFormInput = document.querySelector("#login-form input");
 const button = document.querySelector("#login-form button");
 const greeting = document.querySelector("#greeting");
+const logoutButton = document.querySelector("#logout-button");
+
 
 const HIDDEN_CLASSNAME = "hidden";
 
@@ -13,10 +15,19 @@ function btnClick(event){
     paintGreetings(username);
 }
 
+function logoutBtnClick(){
+    localStorage.removeItem("username");
+    greeting.classList.add(HIDDEN_CLASSNAME);
+    loginForm.classList.remove(HIDDEN_CLASSNAME);
+    logoutButton.classList.add(HIDDEN_CLASSNAME);
+}
+
 
 function paintGreetings(username){
     greeting.classList.remove(HIDDEN_CLASSNAME);
     greeting.innerText = `Today is good day, ${username}`;
+    logoutButton.classList.remove(HIDDEN_CLASSNAME);
+
 }
 
 const savedUsername = localStorage.getItem("username");
@@ -29,3 +40,5 @@ if(savedUsername == null){
 else{
     paintGreetings(savedUsername);
 }
+
+logoutButton.addEventListener("click", logoutBtnClick);
