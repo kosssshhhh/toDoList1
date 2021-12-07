@@ -2,7 +2,7 @@ const loginForm = document.querySelector("#login-form");
 const loginFormInput = document.querySelector("#login-form input");
 const button = document.querySelector("#login-form button");
 const greeting = document.querySelector("#greeting");
-const logoutButton = document.querySelector(".logout-button");
+const logoutButton = document.querySelector("#logout-button");
 
 
 const HIDDEN_CLASSNAME = "hidden";
@@ -16,7 +16,10 @@ function btnClick(event){
 }
 
 function logoutBtnClick(){
-
+    localStorage.removeItem("username");
+    greeting.classList.add(HIDDEN_CLASSNAME);
+    loginForm.classList.remove(HIDDEN_CLASSNAME);
+    logoutButton.classList.add(HIDDEN_CLASSNAME);
 }
 
 
